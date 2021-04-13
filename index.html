@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=sec, initial-scale=1.0" />
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <div class="container initial">
+        <h1 class="brand">Recipe App</h1>
+        <form>
+          <input type="text" placeholder="Search Your Recipe..." />
+          <ion-icon name="search"></ion-icon>
+        </form>
+        <div class="meal-container">
+          <div class="limit">
+            <p>Number of recipe</p>
+            <select id="limit" name="limit">
+              <option value="10">10</option>
+              <option value="20">20</option>
+              <option value="30">30</option>
+            </select>
+          </div>
+          <div class="meal">
+            <p>Meal Type</p>
+            <select id="mealtype" name="mealtype">
+              <option value="lunch dinner breakfast snack">All</option>
+              <option value="breakfast">Breakfast</option>
+              <option value="lunch">Lunch</option>
+              <option value="dinner">Dinner</option>
+              <option value="snack">Snack</option>
+            </select>
+          </div>
+        </div>
+        <div class="search-result"></div>
+      </div>
+    </section>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
